@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<!-- Desenvolvido por: Luca Pedro - PPSI-2 -->
+<html lang="pt-br">
+<head>
+
+	<meta charset="UTF-8">
+	<!-- meta viewport -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- favicon -->
+	<link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+	<!-- links css -->
+	<link href="css/livro.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+	<!-- google fonts -->
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet">
+	<!-- fontawesome -->
+	<script src="https://kit.fontawesome.com/068c052113.js" crossorigin="anonymous"></script>
+	<!-- titulo -->
+	<title>Livro</title>
+
+	<!-- dados estruturados -->
+
+	<script type="application/ld+json">
+	  {
+	    "@context": "https://schema.org",
+	    "@type": "WebPage",
+	    "breadcrumb": "categoria_php",
+	    "mainEntity":{
+	            "@type": "Book",
+	            "author": "Josh Lockhart",
+	            "datePublished": "2015-04-20",
+	            "image": "capa1.png",
+	            "inLanguage": "Portugues",
+	            "isbn": "978857522-4281",
+	            "name": "php moderno - novos recursos e boas práticas",
+	            "numberOfPages": "296",
+	            "publisher": "Novatec"
+	   			}
+	  }
+	</script>
+	
+</head>
+<body>
+
+	<!-- menu -->
+
+	<header>
+
+		<!-- menu acessivel -->
+        
+        <nav class="menu_acessibilidade">
+
+            <ul>
+                <li>
+                    <a href="#link1" accesskey="1" title="ir para o conteúdo"><span>1</span>ir para o conteúdo</a>
+                </li>
+
+                <li>
+                    <a href="#link2" accesskey="2" title="ir para o menu"><span>2</span>ir para o menu</a>
+                </li>
+
+                <li>
+                    <a href="#rodape" accesskey="3" title="ir para o rodapé"><span>3</span>ir para o rodapé</a>
+                </li>
+
+                <li>
+                    <a href="#link4" accesskey="4" title="ir para busca"><span>4</span>ir para busca</a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+        <!-- menu normal -->
+      
+		<div class="all" id="link2">
+
+			<div class="box_logo">
+				<a href="index.html"><img src="imagens/logo1.png" alt="logo do site bibliotec" class="logo"></a>
+			</div>
+			<input type="checkbox" id="btn">
+			<label for="btn">&#9776;</label>
+			
+			<nav class="menu_responsivo">
+
+				<ul>
+			        <li class="li_f"><a href="#">Categorias</a>
+			        	<ul class="menu_categorias">
+			            	<li><a href="categoria_html.html">HTML5</a>
+			                <li><a href="categoria_css.html">CSS3</a>
+			                <li><a href="categoria_php.html">PHP</a>
+			                <li><a href="categoria_javascript.html">javascript</a>
+			            </ul>
+			        </li>
+				        
+			      	<li class="li_f"><a href="contato_new.html">Contato</a></li>
+			        <li class="li_f"><a href="quem_somos.html">Quem somos</a></li>
+			        <li class="li_f"><a href="mais_baixados.html">Melhores temas</a></li>
+			    </ul>
+			</nav>
+
+			<div class="pesquisa">
+				<form method="post">
+					<input type="text" name="pesquisa" placeholder="Pesquisar livro" id="link4">
+					<i class="fas fa-search"></i>
+				</form>
+			</div>
+
+		</div>  
+
+    </header>
+
+    <!-- livro -->
+
+    <main id="link1">
+		<section class="section-livro">
+			<div class="info-livro">
+				<img src="imagens/capa1.png" alt="capa do livro PHP Moderno - Novos Recursos e Boas Práticas">
+			</div>
+			
+			<div class="info-livro">
+				<h1>PHP Moderno - Novos Recursos e Boas Práticas</h1>
+				
+				<h2>Josh Lockhart</h2>
+				
+				<p>O PHP está passando por um renascimento, embora possa ser difícil perceber, com tantos tutoriais PHP online desatualizados. Com este guia prático, você verá como o PHP se tornou uma linguagem cheia de recursos e madura, orientada a objetos, com namespaces e uma coleção crescente de bibliotecas de componentes reutilizáveis.</p>
+
+				<p>O autor Josh Lockhart – criador do PHP The Right Way, uma iniciativa popular para incentivar as melhores práticas associadas ao PHP – mostra os recursos dessa nova linguagem em ação. Você conhecerá as melhores práticas para a arquitetura e o planejamento de aplicações, bancos de dados, segurança, testes, debugging e implantação.
+				Se tiver uma compreensão básica de PHP e quiser aperfeiçoar suas habilidades, este livro foi escrito para você.</p>
+				
+				<div class="arquivos">
+					
+					<a href="pdf/pdf1.pdf" target="_blank">Ler online</a>
+					
+					<a href="pdf/pdf1.pdf" download>Baixar</a>
+					
+				</div>
+
+			</div>
+		</section>
+
+		<!-- Livros recomendados -->
+
+		<h2 class="h">Livros Recomendados</h2>
+
+		<div class="section-recomendados">
+
+			<div>
+				<a href="livro.html"><img src="imagens/php2.jpg" alt="capa do livro PHP Arrays: Single, Multi-dimensional, Associative and Object Arrays in PHP 7"></a>
+				<p><a href="livro.html" class="link_livro">PHP Arrays: Single, Multi-dimensional</a></p>
+				<p>Steve Prettyman</p>
+				<a href="livro.html">Baixar</a>
+			</div>
+
+			<div>
+				<a href="livro.html"><img src="imagens/php1.jpg" alt="capa do livro Learning PHP Data Objects: A Beginner's Guide to PHP Data Objects, Database Connection"></a>
+				<p><a href="livro.html" class="link_livro">Learning PHP Data Objects</a></p>
+				<p>Dennis Popel</p>
+				<a href="livro.html">Baixar</a>
+			</div>
+
+			<div>
+				<a href="livro.html"><img src="imagens/php6.jpg" alt="capa do livro Design Patterns in PHP and Laravel"></a>
+				<p><a href="livro.html" class="link_livro">Design Patterns in PHP and Laravel</a></p>
+				<p>Kelt Dockins</p>
+				<a href="livro.html">Baixar</a>
+			</div>
+
+			<div>
+				<a href="livro.html"><img src="imagens/php4.jpg" alt="capa do livro CodeIgniter for Rapid PHP Application Development"></a>
+				<p><a href="livro.html" class="link_livro">CodeIgniter for Rapid PHP Application</a></p>
+				<p>David Upton</p>
+				<a href="livro.html">Baixar</a>
+			</div>
+
+		</div>
+
+	</main>
+
+	<!-- Rodapé -->
+
+	<footer id="rodape">
+		<p>BIBLIOTEC <i class="far fa-copyright" id="icon_footer"></i> 2020 Todos os direitos reservados</p>
+	</footer>
+
+</body>
+</html>

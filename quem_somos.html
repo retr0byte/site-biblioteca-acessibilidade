@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<!-- Desenvolvido por: Luca Pedro - PPSI-2 -->
+<html lang="pt-br">
+<head>
+	
+	<meta charset="utf-8">
+	<!-- meta viewport -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- favicon -->
+	<link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+	<!-- links css -->
+	<link rel="stylesheet" href="css/quem_somos.css">
+	<link rel="stylesheet" href="css/main.css">
+	<!-- google fonts --> 
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+	<!-- fontawesome -->
+	<script src="https://kit.fontawesome.com/068c052113.js" crossorigin="anonymous"></script>
+	<!-- titulo -->
+	<title>Quem somos</title>
+</head>
+<body>
+
+	<!-- menu -->
+
+	<header>
+
+		<!-- menu acessivel -->
+        
+        <nav class="menu_acessibilidade">
+
+            <ul>
+                <li>
+                    <a href="#link1" accesskey="1" title="ir para o conteúdo"><span>1</span>ir para o conteúdo</a>
+                </li>
+
+                <li>
+                    <a href="#link2" accesskey="2" title="ir para o menu"><span>2</span>ir para o menu</a>
+                </li>
+
+                <li>
+                    <a href="#rodape" accesskey="3" title="ir para o rodapé"><span>3</span>ir para o rodapé</a>
+                </li>
+
+                <li>
+                    <a href="#link4" accesskey="4" title="ir para busca"><span>4</span>ir para busca</a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+        <!-- menu normal -->
+
+      
+		<div class="all" id="link2">
+
+			<div class="box_logo">
+				<a href="index.html"><img src="imagens/logo1.png" alt="logo do site bibliotec" class="logo"></a>
+			</div>
+			<input type="checkbox" id="btn">
+			<label for="btn">&#9776;</label>
+			
+			<nav class="menu_responsivo">
+
+				<ul>
+			        <li class="li_f"><a href="#">Categorias</a>
+			        	<ul class="menu_categorias">
+			            	<li><a href="categoria_html.html">HTML5</a>
+			                <li><a href="categoria_css.html">CSS3</a>
+			                <li><a href="categoria_php.html">PHP</a>
+			                <li><a href="categoria_javascript.html">javascript</a>
+			            </ul>
+			        </li>
+				        
+			      	<li class="li_f"><a href="contato_new.html">Contato</a></li>
+			        <li class="li_f"><a href="quem_somos.html">Quem somos</a></li>
+			        <li class="li_f"><a href="mais_baixados.html">Melhores temas</a></li>
+			    </ul>
+			</nav>
+
+			<div class="pesquisa">
+				<form method="post">
+					<input type="text" name="pesquisa" placeholder="Pesquisar livro" id="link4">
+					<i class="fas fa-search"></i>
+				</form>
+			</div>
+
+		</div>  
+
+    </header>
+
+    <!-- conteúdo quem somos --> 
+
+	<main id="link1">
+		
+		<div class="sobre-box">
+			<h1>Quem somos</h1>
+
+			<p>
+				Fundada em 2020 a Bibliotec vem com o objetivo de compartilhar informação com estudantes da área
+				de desenvolvimento web possibilitando que eles tenham acesso fácil e gratuito a livros sobre áreas
+				específicas do Front-end e Back-end. Na nossa página o estudante encontrará livros separados em 4 
+				categorias, são elas: HTML, CSS, PHP, JavaScript. No futuro temos a intenção de diversificar mais o
+				nosso acervo de livros com outras categorias.
+			</p>
+
+			<p>
+			No final de tudo, como já dito antes, nosso objetivo nada mais é do que espalhar informação de forma gratuita e livre para que cada vez mais pessoas tenham acesso a ela.
+			</p>
+			
+			<p>
+			<q>Seja cursioso. Leia muito. Experimente coisas novas. Eu acho que muito do que as pessoas chamam de inteligência apenas se resume a curiosidade.</q>-Aaron Swartz
+			</p>
+		</div>
+
+		<div class="sobre-box">
+			<h2>Desenvolvedores</h2>
+
+			<div class="desenvolvedor-box">
+				<div class="desenvolvedor">
+					<img src="imagens/gustavo.jpg" alt="foto do Gustavo Costa Arakaki">
+					<p>Gustavo Costa Arakaki</p>
+				</div>
+
+				<div class="desenvolvedor">
+					<img src="imagens/luca1.jpg" alt="foto do Luca Pedro de Oliveira">
+					<p>Luca Pedro de Oliveira</p>
+				</div>
+			</div>
+		</div>
+
+	</main>
+
+	<!-- Rodapé -->
+
+	<footer id="rodape">
+		<p>BIBLIOTEC <i class="far fa-copyright" id="icon_footer"></i> 2020 Todos os direitos reservados</p>
+	</footer>
+
+
+</body>
+</html>

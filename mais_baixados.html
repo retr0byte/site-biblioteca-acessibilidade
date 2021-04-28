@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<!-- Desenvolvido por: Gustavo Costa Arakaki - PPSI-2 -->
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+	<!-- meta viewport -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- favicon -->
+	<link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+	<!-- links css -->
+	<link href="css/mais_baixados.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+	<!-- google fonts -->
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet">
+	<!-- fontawesome -->
+	<script src="https://kit.fontawesome.com/068c052113.js" crossorigin="anonymous"></script>
+	<!-- titulo -->
+	<title>Melhores temas</title>
+</head>
+<body>
+<!-- menu -->
+	
+	<header>
+
+		<!-- menu acessivel -->
+        
+        <nav class="menu_acessibilidade">
+
+            <ul>
+                <li>
+                    <a href="#link1" accesskey="1" title="ir para o conteúdo"><span>1</span>ir para o conteúdo</a>
+                </li>
+
+                <li>
+                    <a href="#link2" accesskey="2" title="ir para o menu"><span>2</span>ir para o menu</a>
+                </li>
+
+                <li>
+                    <a href="#rodape" accesskey="3" title="ir para o rodapé"><span>3</span>ir para o rodapé</a>
+                </li>
+
+                <li>
+                    <a href="#link4" accesskey="4" title="ir para busca"><span>4</span>ir para busca</a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+
+        <!-- menu normal -->
+
+      
+		<div class="all" id="link2">
+
+			<div class="box_logo">
+				<a href="index.html"><img src="imagens/logo1.png" alt="logo do site bibliotec" class="logo"></a>
+			</div>
+			<input type="checkbox" id="btn">
+			<label for="btn">&#9776;</label>
+			
+			<nav class="menu_responsivo">
+
+				<ul>
+			        <li class="li_f"><a href="#">Categorias</a>
+			        	<ul class="menu_categorias">
+			            	<li><a href="categoria_html.html">HTML5</a>
+			                <li><a href="categoria_css.html">CSS3</a>
+			                <li><a href="categoria_php.html">PHP</a>
+			                <li><a href="categoria_javascript.html">javascript</a>
+			            </ul>
+			        </li>
+				        
+			      	<li class="li_f"><a href="contato_new.html">Contato</a></li>
+			        <li class="li_f"><a href="quem_somos.html">Quem somos</a></li>
+			        <li class="li_f"><a href="mais_baixados.html">Melhores temas</a></li>
+			    </ul>
+			</nav>
+
+			<div class="pesquisa">
+				<form method="post">
+					<input type="text" name="pesquisa" placeholder="Pesquisar livro" id="link4">
+					<i class="fas fa-search"></i>
+				</form>
+			</div>
+
+		</div>  
+
+    </header>
+
+    <!-- tabela -->
+    <section>
+    	<h1>Melhores temas</h1>
+    	<table>
+		    <thead>
+		        <tr>
+		           <th>Tema</th>
+		           <th>Livros baixados</th>
+		        </tr>
+		    </thead>
+
+		    <tbody>
+		       <tr>
+		            <td>HTML5</td>
+		            <td>21</td>
+		       </tr>
+		       <tr>
+		            <td>CSS3</td>
+		            <td>15</td>
+		       </tr>
+		       <tr>
+		            <td>PHP</td>
+		            <td>22</td>
+		       </tr>
+		       <tr>
+		            <td>Javascript</td>
+		            <td>18</td>
+		       </tr>
+		    </tbody>
+		</table>
+    </section>
+</body>
+</html>

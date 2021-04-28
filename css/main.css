@@ -1,0 +1,285 @@
+/*Desenvolvido por: Luca Pedro*/
+
+body{
+	margin:0;
+	padding:0;
+	font-family: 'Roboto', sans-serif;
+}
+
+header {
+    width: 100%;
+    background-color: #343a40;
+    min-height: 100%;
+}
+
+
+/*menu acessibilidade*/
+
+.menu_acessibilidade {
+    width: 100%;
+    /*background-color: pink;*/
+    padding: 4px 0px 4px 0px;
+    border-bottom: solid 1px gray;
+}
+
+.menu_acessibilidade ul {
+    margin: 0 0 0 2%;
+    list-style: none;
+    padding: 0px;
+}
+
+.menu_acessibilidade ul li {
+    display: inline;
+    margin-left: 5px;
+}
+
+.menu_acessibilidade ul li a {
+    text-decoration: none;
+    font-size: 12px;
+    color: #fff;
+}
+
+.menu_acessibilidade ul li a span {
+    background-color: #6c757d;
+    padding: 0 4px;
+    margin-right: 4px;
+}
+
+/*menu responsivo*/
+.menu_responsivo {
+    width: 100%;
+    background-color: #343a40;
+}
+
+.menu_responsivo>ul {
+    list-style: none;    
+    position: relative;
+
+    background-color: #343a40;
+}
+
+.menu_responsivo ul li {
+    float: left;
+}
+
+.li_f {
+    margin-left: 20px;
+}
+
+.menu_responsivo a {
+    padding: 15px;
+    display: block;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+
+.menu_responsivo ul ul {
+    list-style: none;
+}
+
+.menu_responsivo ul li:hover ul {
+    display: block;
+}
+    
+.menu_responsivo ul ul li {
+    float: none;
+    border-bottom: solid 1px #ccc;
+}
+
+.menu_responsivo ul ul li a {
+    background-color: #343a40;
+}
+
+#btn {
+    display: none;
+}
+
+label[for='btn'] {
+    padding: 0px;
+    color: #fff;
+    text-align: center;
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+    width: 45px;
+    height: 45px;
+}  
+
+.box_logo {
+    width: 150px;
+}
+
+
+/*rodape*/
+footer {
+    background-color: #343a40;
+    color: #fff;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    float: left;
+    margin-top: 20px;
+    
+    bottom: 0px;
+}
+
+#icon_footer {
+    font-size: 16px;
+}
+
+
+
+/*responsive max  width 460px*/
+
+@media (max-width: 929px)
+{
+    .box_logo {
+        line-height: 52px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+
+    .menu_acessibilidade {
+        display: none;
+    }
+
+    .menu_responsivo {
+        margin-left: -100%;
+        transition: all .4s;
+    }
+
+    label[for='btn'] {
+        display: block;
+    }
+
+    .menu_responsivo>ul {
+        margin: 0;
+        background: #343a40;
+        width: 40%;
+        padding: 0px 10px;
+    }
+
+    .menu_responsivo {
+        height: 0px;
+    }
+
+    .menu_responsivo ul li {
+        float: none;
+        border-bottom: solid 1px #6c757d;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .menu_responsivo ul ul {
+        position: static;
+        overflow: hidden;
+        max-height: 0;
+        transition: all .4s;
+    }
+
+    .menu_responsivo ul li:hover ul{
+        height: auto;
+        max-height: 200px;
+        transition: all .4s;
+    }
+
+    .menu_responsivo a {
+        display: flex;
+        padding: 15px 0px;
+    }
+
+    #btn:checked ~ .menu_responsivo{
+        margin-left: 0;
+    }
+
+    .menu_categorias {
+        padding: 0px 5px;
+    }
+
+    .pesquisa {
+        position: absolute;
+        top: 9px;
+        right: 5%;
+        background: white;
+        border-radius: 50%;
+    }
+
+    .fa-search, .fas {
+        font-size: 18px;
+        padding: 5px;
+    }
+
+    .pesquisa input {
+        display: none;
+    }
+
+    .menu_responsivo ul ul li {
+        padding: 0px 25px;
+        float: none;
+        border-bottom: solid 1px #ccc;
+    }
+}
+
+
+/*responsive min width 461px*/
+
+@media (min-width: 930px)
+{
+    .menu_responsivo ul ul {
+        list-style: none;
+        display: none;
+        position: absolute;
+    }
+
+    .menu_responsivo>ul {
+        margin: 0px 50px;
+    }
+
+    .menu_responsivo ul li:hover ul {
+        display: block;
+    }
+
+    header div {
+        display: flex;
+        align-items: center;
+    }
+
+    .box_logo {
+        margin-left: 25px;
+    }
+
+    .pesquisa {
+        width: 315px;
+        background: white;
+        margin-right: 40px;
+        border-radius: 30px;
+    }
+
+    .pesquisa input {
+        width: 68%;
+        height: 20px;
+        padding: 5px 14px 4px;
+        border-radius: 30px;
+        border: none;
+        outline: 0;
+    }
+
+    .fa-search, .fas {
+        font-size: 15px;
+    }
+
+    .menu_acessibilidade {
+        border-bottom: solid 1px #6c757d;
+    }
+}
+
+/*responsivo max width 363px*/
+
+@media (max-width: 363px) {
+    footer {
+        height: auto;
+    }
+}
