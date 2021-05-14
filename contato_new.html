@@ -95,27 +95,27 @@
 		<section>
 
 			<h1>Contato</h1>
-			
-			<form action="luca.php">
+			<span id="mensagensErro"></span>
+			<form id="formAcessivel" action="luca.php">
 				<p>
-					<label for="nome">Nome</label>
+					<label for="nome">Nome Completo</label>
 					<br>
-					<input type="text" name="nome" id="nome" required>
+					<input type="text" name="nome" id="nome">
 				</p>
 				<p>
 					<label for="email">Email</label>
 					<br>
-					<input type="text" name="email" id="email" required>
+					<input type="text" name="email" id="email">
 				</p>
 				<p>
 					<label for="tel">Telefone</label>
 					<br>
-					<input type="text" name="tel" id="tel" required>
+					<input type="text" name="tel" id="tel">
 				</p>
 				<p>
 					<label for="msg">Mensagem</label>
 					<br>
-					<textarea id="msg" required></textarea>
+					<textarea id="msg"></textarea>
 				</p>
 				<p>
 					<input type="submit" value="Enviar">
@@ -130,6 +130,8 @@
 	<footer id="rodape">
 		<p>BIBLIOTEC <i class="far fa-copyright" id="icon_footer"></i> 2020 Todos os direitos reservados</p>
 	</footer>
-
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="js/jquery.mask.min.js"></script>
+	<script src="js/form_acessivel.js"></script>
 </body>
 </html>

@@ -54,6 +54,25 @@ form p:nth-child(5) {
 	text-align: center;
 }
 
+/* erros */
+
+span#mensagensErro{
+	display: none;
+	background-color: #F8D7DA;
+	color:#721C24;
+	padding: 15px;
+}
+
+span#mensagensErro a{
+	font-weight: bold;
+	color:#721C24;
+}
+
+form#formAcessivel input:focus,
+form#formAcessivel textarea:focus{
+	background-color:#F2E7C4;
+}
+
 /*responsivo*/
 
 @media (max-width: 499px)
