@@ -1,8 +1,3 @@
-$(function () {
-    aplicarMascaras()
-    assistirForm()
-})
-
 /**
  * ETAPA 1
  * Modificar as funções abaixo caso seja adicionado algum campo novo: 
@@ -36,6 +31,11 @@ $(function () {
  *          - exibirMensagem() -> adicionar a nova chave e sua respectiva mensagem de erro, na constante mensagens
  * 
  */
+
+$(function () {
+    aplicarMascaras()
+    assistirForm()
+})
 
 const acessarCampos = () => {
     let nome = $("#nome")
