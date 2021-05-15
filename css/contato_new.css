@@ -39,10 +39,12 @@ input[type="submit"] {
     cursor: pointer;
 }
 
-input[type="submit"]:hover{
-	background-color: #343a40;
-	color: #fff;
+input[type="submit"]:hover,
+input[type="submit"]:focus{
+	background-color: #343a40 !important;
+	color: #fff !important;
 }
+
 
 textarea {
 	outline: none;
@@ -56,14 +58,23 @@ form p:nth-child(5) {
 
 /* erros */
 
-span#mensagensErro{
+div#mensagensErro{
 	display: none;
+}
+
+div#mensagensErro h2{
+	color: #343a40;
+	border-bottom: 1px solid #343a40;
+}
+
+
+div#erros{
 	background-color: #F8D7DA;
 	color:#721C24;
 	padding: 15px;
 }
 
-span#mensagensErro a{
+div#erros a{
 	font-weight: bold;
 	color:#721C24;
 }
@@ -71,6 +82,16 @@ span#mensagensErro a{
 form#formAcessivel input:focus,
 form#formAcessivel textarea:focus{
 	background-color:#F2E7C4;
+}
+
+.success{
+	background:#D4EDDA;
+	color:#155724;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	margin-top:20px;
+	padding:20px;
 }
 
 /*responsivo*/

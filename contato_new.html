@@ -92,25 +92,30 @@
     <main id="link1">
 			
 
-		<section>
+		<section id="formularioContato">
 
 			<h1>Contato</h1>
-			<span id="mensagensErro"></span>
+			<div id="mensagensErro">
+				<h2>Avisos - dados inválidos</h2>
+				<div id="erros">
+
+				</div>
+			</div>
 			<form id="formAcessivel" action="luca.php">
 				<p>
 					<label for="nome">Nome Completo</label>
 					<br>
-					<input type="text" name="nome" id="nome">
+					<input type="text" name="nome" id="nome" autocomplete="off">
 				</p>
 				<p>
 					<label for="email">Email</label>
 					<br>
-					<input type="text" name="email" id="email">
+					<input type="text" name="email" id="email" autocomplete="off">
 				</p>
 				<p>
 					<label for="tel">Telefone</label>
 					<br>
-					<input type="text" name="tel" id="tel">
+					<input type="text" name="tel" id="tel" autocomplete="off">
 				</p>
 				<p>
 					<label for="msg">Mensagem</label>
@@ -132,6 +137,7 @@
 	</footer>
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 	<script src="js/jquery.mask.min.js"></script>
+	<script src="js/form_acessivel_validacoes.js"></script>
 	<script src="js/form_acessivel.js"></script>
 </body>
 </html>
