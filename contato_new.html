@@ -103,24 +103,40 @@
 			</div>
 			<form id="formAcessivel" action="luca.php">
 				<p>
+					<span>(obrigatório)</span>
+					<br>
 					<label for="nome">Nome Completo</label>
 					<br>
-					<input type="text" name="nome" id="nome" autocomplete="off">
+					<span class="ex">*Exemplo: João da Silva</span>
+					<br>
+					<input type="text" name="nome" id="nome" autocomplete="off" required>
 				</p>
 				<p>
+					<span>(obrigatório)</span>
+					<br>
 					<label for="email">Email (Pessoal)</label>
 					<br>
-					<input type="text" name="email" id="email" autocomplete="off">
+					<span class="ex">*Exemplo: joaosilva@gmail.com</span>
+					<br>
+					<input type="text" name="email" id="email" autocomplete="off" required>
 				</p>
 				<p>
+					<span>(obrigatório)</span>
+					<br>
 					<label for="tel">Telefone</label>
 					<br>
-					<input type="text" name="tel" id="tel" autocomplete="off">
+					<span class="ex">*Exemplo(13) 2141-8721</span>
+					<br>
+					<input type="text" name="tel" id="tel" autocomplete="off" required>
 				</p>
 				<p>
+					<span>(obrigatório)</span>
+					<br>
 					<label for="msg">Mensagem</label>
 					<br>
-					<textarea id="msg"></textarea>
+					<span class="ex">*Ex: Gostei dos seus livros.</span>
+					<br>
+					<textarea id="msg" required></textarea>
 				</p>
 				<p>
 					<input type="submit" value="Enviar">

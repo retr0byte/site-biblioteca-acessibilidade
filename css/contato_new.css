@@ -21,7 +21,15 @@ h1 {
 	color: #343a40;
 }
 
+form span {
+	color: red; 
+	font-size: 12px;
+}
 
+.ex {
+	color: gray;
+	font-size: 12px;	
+}
 
 input[type="text"] {
 	outline: none;
