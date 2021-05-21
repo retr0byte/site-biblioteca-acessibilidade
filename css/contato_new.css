@@ -1,4 +1,4 @@
-/*Desenvolvido por: Luca Pedro*/
+
 
 body{
 	margin:0;
@@ -54,6 +54,12 @@ textarea {
 
 form p:nth-child(5) {
 	text-align: center;
+}
+
+div.pesquisa form button[type=submit]{
+	border:none;
+	background-color: transparent;
+	cursor: pointer;
 }
 
 /* erros */
