@@ -129,9 +129,6 @@ footer {
 }
 
 
-
-/*responsive max  width 460px*/
-
 @media (max-width: 929px)
 {
     .box_logo {
@@ -224,7 +221,7 @@ footer {
 }
 
 
-/*responsive min width 461px*/
+
 
 @media (min-width: 930px)
 {
@@ -239,6 +236,10 @@ footer {
     }
 
     .menu_responsivo ul li:hover ul {
+        display: block;
+    }
+
+    .menu_responsivo ul li:focus:hover ul {
         display: block;
     }
 

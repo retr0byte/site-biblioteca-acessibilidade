@@ -63,12 +63,12 @@
 			<nav class="menu_responsivo">
 
 				<ul>
-			        <li class="li_f"><a href="#">Categorias</a>
-			        	<ul class="menu_categorias">
-			            	<li><a href="categoria_html.html">HTML5</a>
-			                <li><a href="categoria_css.html">CSS3</a>
-			                <li><a href="categoria_php.html">PHP</a>
-			                <li><a href="categoria_javascript.html">javascript</a>
+			        <li class="li_f"><a href="#" class="foco">Categorias</a>
+			        	<ul class="menu_categorias" id="listaFoco">
+			            	<li><a href="categoria_html.html" class="foco">HTML5</a>
+			                <li><a href="categoria_css.html" class="foco">CSS3</a>
+			                <li><a href="categoria_php.html" class="foco">PHP</a>
+			                <li><a 	href="categoria_javascript.html" class="foco">javascript</a>
 			            </ul>
 			        </li>
 				        
@@ -125,3 +125,23 @@
 
 </body>
 </html>
+<script>
+// var teste2 = document.querySelector('.');
+var teste = document.querySelectorAll('.foco');
+var listaFoco = document.getElementById('listaFoco');
+
+listaFoco.addEventListener('focus', function() {
+	listaFoco.style.backgroundColor = "red";
+});	
+
+for(let i = 0; i < teste.length; i++) {	
+	teste[i].addEventListener('focus', function() {
+	listaFoco.style.display = "block";
+	});	
+}
+for(let i = 0; i < teste.length; i++) {	
+	teste[i].addEventListener('blur', function() {
+	listaFoco.style.display = "none";
+	});	
+}
+</script>
