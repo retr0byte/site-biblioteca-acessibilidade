@@ -2,20 +2,21 @@
 
 <html lang="pt-br">
 <head>
-	<meta charset="UTF-8">
+	<meta charset="utf-8">
 	<!-- meta viewport -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<!-- favicon -->
 	<link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
 	<!-- links css -->
-	<link href="css/categoria.css" rel="stylesheet">
-	<link href="css/main.css" rel="stylesheet">
-	<!-- google fonts -->
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/categoria.css">
+	<link rel="stylesheet" href="css/main.css">
+	<!-- google fonts --> 
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 	<!-- fontawesome -->
 	<script src="https://kit.fontawesome.com/068c052113.js" crossorigin="anonymous"></script>
 	<!-- titulo -->
-	<title>Livros sobre a Javascript</title>
+	<title>Quem somos</title>
+	
 </head>
 <body>
 
@@ -61,12 +62,12 @@
 			<nav class="menu_responsivo">
 
 				<ul>
-			        <li class="li_f"><a href="#">Categorias</a>
-			        	<ul class="menu_categorias">
-			            	<li><a href="categoria_html.html">HTML5</a>
-			                <li><a href="categoria_css.html">CSS3</a>
-			                <li><a href="categoria_php.html">PHP</a>
-			                <li><a href="categoria_javascript.html">javascript</a>
+			        <li class="li_f" id="oi"><a href="#" class="foco">Categorias</a>
+			        	<ul class="menu_categorias" id="listaFoco">
+			            	<li><a href="categoria_html.html" class="foco">HTML5</a>
+			                <li><a href="categoria_css.html" class="foco">CSS3</a>
+			                <li><a href="categoria_php.html" class="foco">PHP</a>
+			                <li><a 	href="categoria_javascript.html" class="foco">javascript</a>
 			            </ul>
 			        </li>
 				        
@@ -78,8 +79,8 @@
 
 			<div class="pesquisa">
 				<form method="post">
-					<input type="text" name="pesquisa" placeholder="Pesquisar livro" id="link4">
-					<button type="submit"><button type="submit"><i class="fas fa-search"></i></button></i></button>
+					<input type="text" name="pesquisa" id="link4">
+					<button type="submit"><i class="fas fa-search"></i></button>
 				</form>
 			</div>
 
@@ -168,5 +169,7 @@
 	<footer id="rodape">
 		<p>BIBLIOTEC <i class="far fa-copyright" id="icon_footer"></i> 2020 Todos os direitos reservados</p>
 	</footer>
+	<!-- script tab -->
+	<script src="js/tab_menu.js"></script>
 </body>
 </html>

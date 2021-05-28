@@ -24,3 +24,27 @@ td {
 	border: solid 1px;
 	text-align: center;
 }
+
+@media(min-width: 540px)
+{
+	footer {
+		position: absolute;
+		bottom: 0px;
+	}
+}
+
+@media (max-width: 1043px)
+{
+	footer {
+		position: relative;
+	}
+
+
+}
+
+@media (min-width: 1044px)
+{
+	footer {
+		position: absolute;
+	}
+}
