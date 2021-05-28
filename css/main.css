@@ -1,4 +1,4 @@
-/*Desenvolvido por: Luca Pedro*/
+
 
 body{
 	margin:0;
@@ -128,6 +128,11 @@ footer {
     font-size: 16px;
 }
 
+div.pesquisa form button[type=submit]{
+	border:none;
+	background-color: transparent;
+	cursor: pointer;
+}
 
 @media (max-width: 929px)
 {
