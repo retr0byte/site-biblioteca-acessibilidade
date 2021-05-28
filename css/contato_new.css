@@ -33,7 +33,7 @@ form span {
 
 input[type="text"] {
 	outline: none;
-	width: 600px;
+	width: 100%;
     height: 25px;
 }
 
@@ -56,7 +56,7 @@ input[type="submit"]:focus{
 
 textarea {
 	outline: none;
-	width: 600px;
+	width: 100%;
     height: 100px;
 }
 
@@ -85,6 +85,10 @@ div#erros{
 div#erros a{
 	font-weight: bold;
 	color:#721C24;
+}
+
+form#formAcessivel{
+	margin: 0 20px;
 }
 
 form#formAcessivel input:focus,
