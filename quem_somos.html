@@ -17,6 +17,7 @@
 	<script src="https://kit.fontawesome.com/068c052113.js" crossorigin="anonymous"></script>
 	<!-- titulo -->
 	<title>Quem somos</title>
+	
 </head>
 <body>
 
@@ -63,7 +64,7 @@
 			<nav class="menu_responsivo">
 
 				<ul>
-			        <li class="li_f"><a href="#" class="foco">Categorias</a>
+			        <li class="li_f" id="oi"><a href="#" class="foco">Categorias</a>
 			        	<ul class="menu_categorias" id="listaFoco">
 			            	<li><a href="categoria_html.html" class="foco">HTML5</a>
 			                <li><a href="categoria_css.html" class="foco">CSS3</a>
@@ -121,27 +122,12 @@
 	<footer id="rodape">
 		<p>BIBLIOTEC <i class="far fa-copyright" id="icon_footer"></i> 2020 Todos os direitos reservados</p>
 	</footer>
-
+	
+	<!-- script tab -->
+	<script src="js/tab_menu.js"></script>
 
 </body>
 </html>
-<script>
-// var teste2 = document.querySelector('.');
-var teste = document.querySelectorAll('.foco');
-var listaFoco = document.getElementById('listaFoco');
 
-listaFoco.addEventListener('focus', function() {
-	listaFoco.style.backgroundColor = "red";
-});	
 
-for(let i = 0; i < teste.length; i++) {	
-	teste[i].addEventListener('focus', function() {
-	listaFoco.style.display = "block";
-	});	
-}
-for(let i = 0; i < teste.length; i++) {	
-	teste[i].addEventListener('blur', function() {
-	listaFoco.style.display = "none";
-	});	
-}
-</script>
+
