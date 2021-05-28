@@ -137,7 +137,7 @@ const marcarCampos = errArr => {
     }
 
     for (let i = 0; i < errArr.length; i++) {
-        $(`#${errArr[i].chave}`).css('border', '1px solid red')
+        $(`#${errArr[i].chave}`).css('border', '1px solid #A80000')
     }
 }
 
