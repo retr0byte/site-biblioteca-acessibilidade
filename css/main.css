@@ -46,36 +46,34 @@ header {
 }
 
 /*menu responsivo*/
+
+div.all{
+    display: flex;
+    padding: 5px;
+    justify-content: space-between;
+}
+
 .menu_responsivo {
-    width: 100%;
     background-color: #343a40;
 }
 
 .menu_responsivo>ul {
+    display: flex;
     list-style: none;    
-    position: relative;
-
     background-color: #343a40;
 }
 
-.menu_responsivo ul li {
-    float: left;
-}
-
-.li_f {
-    margin-left: 20px;
-}
-
 .menu_responsivo a {
-    padding: 15px;
+    padding: 10px;
     display: block;
     text-decoration: none;
     color: white;
-    text-align: center;
 }
 
 .menu_responsivo ul ul {
     list-style: none;
+    display: none;
+    position: absolute;
 }
 
 .menu_responsivo ul li:hover ul {
@@ -83,7 +81,6 @@ header {
 }
     
 .menu_responsivo ul ul li {
-    float: none;
     border-bottom: solid 1px #ccc;
 }
 
@@ -132,9 +129,53 @@ div.pesquisa form button[type=submit]{
 	border:none;
 	background-color: transparent;
 	cursor: pointer;
+    min-width: 10%;
 }
 
-@media (max-width: 929px)
+div.pesquisa{
+    color: #343a40;
+    width: 30%;
+    background-color: white;
+    border-radius: 15px;
+}
+
+div.pesquisa label{
+    min-width: 40%;
+    padding: 4px;
+    margin: 5px;
+    border-right: 1px solid black;
+}
+
+div.pesquisa input{
+    border:none;
+    width: 50%;
+    padding: 4px;
+}
+
+div.pesquisa input:focus{
+    outline: none;
+}
+
+div.pesquisa form{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+@media (max-width: 1125px) {
+    div.pesquisa{
+        width: 27%;
+    }
+
+    div.pesquisa label,
+    div.pesquisa input{
+        font-size: 14px;
+    }
+}
+
+/*responsive max  width 460px*/
+
+@media (max-width: 1025px)
 {
     .box_logo {
         line-height: 52px;
@@ -149,8 +190,9 @@ div.pesquisa form button[type=submit]{
     }
 
     .menu_responsivo {
-        margin-left: -100%;
+        margin-left: -200%;
         transition: all .4s;
+        z-index: 99999;
     }
 
     label[for='btn'] {
@@ -158,10 +200,10 @@ div.pesquisa form button[type=submit]{
     }
 
     .menu_responsivo>ul {
-        margin: 0;
+        width: 80vw;
+        margin-top: 51px;
+        display: block;
         background: #343a40;
-        width: 40%;
-        padding: 0px 10px;
     }
 
     .menu_responsivo {
@@ -169,7 +211,6 @@ div.pesquisa form button[type=submit]{
     }
 
     .menu_responsivo ul li {
-        float: none;
         border-bottom: solid 1px #6c757d;
         margin: 0px;
         padding: 0px;
@@ -197,31 +238,26 @@ div.pesquisa form button[type=submit]{
         margin-left: 0;
     }
 
-    .menu_categorias {
-        padding: 0px 5px;
-    }
-
-    .pesquisa {
-        position: absolute;
-        top: 9px;
-        right: 5%;
-        background: white;
-        border-radius: 50%;
-    }
-
     .fa-search, .fas {
         font-size: 18px;
         padding: 5px;
     }
 
-    .pesquisa input {
-        display: none;
+    .pesquisa input,
+    .pesquisa label {
+        display:none;
     }
 
-    .menu_responsivo ul ul li {
-        padding: 0px 25px;
-        float: none;
-        border-bottom: solid 1px #ccc;
+    div.pesquisa{
+        background-color: transparent;
+        display: flex;
+        width: 35px;
+    }
+
+    .pesquisa button{
+        padding: 0;
+        background-color: white !important;
+        border-radius: 50%;
     }
 }
 
@@ -230,24 +266,6 @@ div.pesquisa form button[type=submit]{
 
 @media (min-width: 930px)
 {
-    .menu_responsivo ul ul {
-        list-style: none;
-        display: none;
-        position: absolute;
-    }
-
-    .menu_responsivo>ul {
-        margin: 0px 50px;
-    }
-
-    .menu_responsivo ul li:hover ul {
-        display: block;
-    }
-
-    .menu_responsivo ul li:focus:hover ul {
-        display: block;
-    }
-
     header div {
         display: flex;
         align-items: center;
@@ -257,28 +275,8 @@ div.pesquisa form button[type=submit]{
         margin-left: 25px;
     }
 
-    .pesquisa {
-        width: 315px;
-        background: white;
-        margin-right: 40px;
-        border-radius: 30px;
-    }
-
-    .pesquisa input {
-        width: 68%;
-        height: 20px;
-        padding: 5px 14px 4px;
-        border-radius: 30px;
-        border: none;
-        outline: 0;
-    }
-
     .fa-search, .fas {
         font-size: 15px;
-    }
-
-    .menu_acessibilidade {
-        border-bottom: solid 1px #6c757d;
     }
 }
 
