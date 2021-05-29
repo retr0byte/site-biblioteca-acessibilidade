@@ -42,6 +42,30 @@ main {
     height: 150px;
 }
 
+.github-links-wrapper{
+	display: flex;
+	width: 40%;
+	margin-left: 5%;
+	flex-direction: column;
+}
+
+.github-links-wrapper img{
+	width: 50px;
+}
+
+.github-links-group{
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+}
+
+.github-link{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
 /*responsivo*/
 
 @media (max-width: 274px)
@@ -65,6 +89,9 @@ main {
 		position: relative;
 		left: 0px;
 	}
+	.github-links-group{
+		flex-direction: column;
+	}
 
 }
 
@@ -73,6 +100,14 @@ main {
 	footer {
 		position: absolute;
 		bottom: 0px;
+	}
+}
+
+@media (max-width: 950px)
+{
+	.github-links-wrapper{
+		width: 100%;
+		margin: 10% 0 10% 0;
 	}
 }
 
