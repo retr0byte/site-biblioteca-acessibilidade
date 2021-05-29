@@ -40,7 +40,7 @@ header {
 }
 
 .menu_acessibilidade ul li a span {
-    background-color: #4E565A;
+    background-color: #181d22;
     padding: 0 4px;
     margin-right: 4px;
 }
@@ -262,7 +262,7 @@ div.pesquisa form{
 }
 
 
-/*responsive min width 461px*/
+
 
 @media (min-width: 930px)
 {
